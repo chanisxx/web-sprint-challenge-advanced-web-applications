@@ -10,6 +10,163 @@ body,
   padding: 0;
 }
 
+.header {
+  margin-left: 50%;
+}
+
+.login-form {
+  margin: 20% 25%;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.error-login {
+  color: rgba(255, 0, 0, 0.534);
+}
+
+.input {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid lightgreen;
+  font-size: 1.05rem;
+  outline: none;
+  width: 500px;
+}
+
+.btn {
+  background-color: #82E0AA;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border-bottom: solid 5px #1E8449;
+  cursor: pointer;
+  margin-top: 30px;
+  animation-name: button;
+  animation-duration: 4s;
+}
+
+@keyframes button {
+  0% {background-color: #82E0AA;
+    border-bottom: solid 5px #1E8449;}
+  20% { background-color: #BB8FCE;
+    border-bottom: solid 5px #8E44AD;}
+  40% { background-color: #EC7063;
+    border-bottom: solid 5px #C0392B;}
+  60% { background-color: #85C1E9;
+    border-bottom: solid 5px #2874A6;}
+  80% { background-color: #EB984E ;
+    border-bottom: solid 5px #D35400;}
+  100% { background-color: #BB8FCE;
+    border-bottom: solid 5px #8E44AD;}
+}
+
+
+.btn:hover {
+  transform: translateY(2px);
+  border-bottom: solid 3px #1E8449;
+}
+
+.btn:active {
+  border-bottom: none;
+  transform: translateY(4px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 3%;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  padding: 14px 20px 14px 5px;
+}
+
+.a:hover {
+  border-bottom: #82E0AA 1px solid;
+}
+
+.logo {
+  font-weight: bolder;
+  color: black;
+  margin-left: -10px;
+
+}
+
+.bubble {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.75);
+  opacity: 0.3;
+  position: relative;
+}
+
+.blue {
+  bottom: 500px;
+  left: 900px;
+  animation-name: bubble1;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+.pink {
+  bottom: 400px;
+  left: 750px;
+  animation-name: bubble2;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
+}
+
+.red {
+  bottom: 290px;
+  left: 850px;
+  animation-name: bubble3;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes bubble1 {
+  0%   { left:-15px; bottom:500px;}
+  20%  { left:100px; bottom:550px;}
+  40%  { left:300px; bottom: 525px;}
+  60%  { left:500px; bottom:550px;}
+  80%  {left:700px; bottom:525px;}
+  100% {left:900px; bottom:500px;}
+}
+
+@keyframes bubble2 {
+  0%   { left:0px; bottom:400px;}
+  20%   {left:200px; bottom: 350px;}
+  40%  {left:400px; bottom: 400px;}
+  60%  { left:600px; bottom: 450px;}
+  80%  {left:700x; bottom: 425px;}
+  100% {left:750px; bottom:400px;}
+}
+
+@keyframes bubble3 {
+  0%   {left:15px; bottom: 290px;}
+  20%  {left:70px; bottom: 315px;}
+  40%  {left:275px; bottom:340px;}
+  60%  {left:500px; bottom: 365px;}
+  80%  {left:700px; bottom: 330px;}
+  100% {left:850px; bottom: 290px;}
+}
+
 .App {
   font-family: "Montserrat", sans-serif;
   text-align: center;

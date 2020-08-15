@@ -28,9 +28,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+  A token is basically like a password that allows a user to gain access to restricted parts of an application. (i.e a successful login that routes to a PrivateRoute)
 2. What steps can you take in your web apps to keep your data secure?
+  one step would be requiring a user to have a token in order to go into restricted routes...
+  another would be to require a user to have complex passwords that would be harder to hack...
+  lastly is to make sure the whole authorization process is as up to date as it can be and to make sure it is still working as intended.
 3. Describe how web servers work.
+  a web server intakes requests to API's and executes functions. It creates the link between a user and the main data. 
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+  one can use a post request to add data to the API (C), get to retrieve data from the API (R), put to update data from the API (U), and delete to remove data from the API (D).
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -61,10 +67,10 @@ Your finished project must include all of the following requirements:
 
 Build a login form to authenticate your users.
 
-- [ ] Construct an AXIOS request to retrieve a token from the server. You'll use this token to interact with the API
-- [ ] Save the token to localStorage
-- [ ] Build a `axiosWithAuth` module to create an instance of axios with the authentication header
-- [ ] Build a `PrivateRoute` component and use it to protect a route that renders the `BubblesPage` component
+- [ X ] Construct an AXIOS request to retrieve a token from the server. You'll use this token to interact with the API
+- [ X ] Save the token to localStorage
+- [ X ] Build a `axiosWithAuth` module to create an instance of axios with the authentication header
+- [ X ] Build a `PrivateRoute` component and use it to protect a route that renders the `BubblesPage` component
 
 #### Stage 2 - Consuming the API
 
